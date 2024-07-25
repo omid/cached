@@ -3,6 +3,7 @@
 ## [Unreleased]
 ## Added
 ## Changed
+- Change Rust edition to 2021
 ## Removed
 
 ## [0.53.0]
@@ -14,7 +15,7 @@
 ## [0.52.0 / [cached_proc_macro[0.22.0]] ]
 ## Added
 ## Changed
-- Propagate function generics to generated inner cache function 
+- Propagate function generics to generated inner cache function
 ## Removed
 
 
@@ -65,7 +66,7 @@
 - Add `cache_unset_lifespan` to cached traits for un-setting expiration on types that support it
 ## Changed
 - [Breaking] `type` attribute is now `ty`
-- Upgrade to syn2 
+- Upgrade to syn2
 - Corrected a typo in DiskCacheError (de)serialization variants
 - Signature or `DiskCache::remove_expired_entries`: this now returns `Result<(), DiskCacheError>` instead of `()`, returning an `Err(sled::Error)` on removing and flushing from the connection.
 ## Removed
